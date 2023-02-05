@@ -1,0 +1,53 @@
+#main-content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    /* background-color: antiquewhite; */
+    gap: 30px;
+}
+       
+
+    #left-section{
+    border: 1px solid black;
+        padding: 20px;
+    }
+
+    #right-section{
+        border: 1px solid black;
+        padding: 20px;
+        width: 600px;
+        
+    }
+    .span-tag{
+        margin-left: 170px;
+    }
+
+    .span-tag1{
+        margin-left:87px;
+    }
+
+    h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .complete-payment{
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px 15px;
+        background-color: rgb(0, 217, 255);
+        color: white;
+        font-size: 20px;
+        display: block;
+    }
+
+input[type="number"],
+input[type="text"],
+input[type="email"]{
+    width: 90%;
+    height: 30px;
+    margin: 0px auto;
+    display: block;
+}
