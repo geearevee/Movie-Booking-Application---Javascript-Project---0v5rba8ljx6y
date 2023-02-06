@@ -86,6 +86,7 @@ main{
 
 .movie-info span.green{
     color: lightgreen;
+    pointer-events: none;
 
 }
 .movie-info span.orange{
@@ -198,4 +199,17 @@ main{
 }
 #genre h3{
     cursor: pointer;
+}
+.movie-card-image{
+    pointer-events: none;
+}
+/* .movie-info{
+    pointer-events: none;
+} */
+.movie-card-overview{
+    pointer-events: none;
+}
+
+.movie h3{
+    pointer-events: none;
 }
