@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #22254b;
+    --secondry-color: #373b69;
+
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+
+header{
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: var(--secondry-color);
+}
+header img{
+    width: 520px;
+    height:auto;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid var(--primaru-color);
+    padding: 0.5rem 1rem;
+    border-radius : 50px;
+    font-size: 1rem;
+    color:#fff;
+    font-family: inherit;
+
+}
+
+.search:focus{
+    outline:0;
+    background-color: var(--primary-color);
+
+}
+
+.search::placeholder{
+    color: #7378c5;
+}
+main{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0,1);
+    background-color: var(--secondry-color);
+    position:relative;
+    overflow: hidden;
+}
+
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;    
+}
+.movie-info h3{
+    margin-top:0;
+}
+.movie-info span{
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.25rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: lightgreen;
+    pointer-events: none;
+
+}
+.movie-info span.orange{
+    color: orange;
+    
+}
+.movie-info span.red{
+    color: red;
+    
+}
+
+.overview{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: white;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform:translateY(0);
+}
+
+
+.movieDetailsContainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.516);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movieDetails{
+    height: 520px;
+    width: 608px;
+    background-color: white;
+    position: relative;
+}
+.movieDetails .close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.movie-popup{
+    display: grid;
+    color: black;
+    /* grid-template-rows: 100% */
+    /* grid-template-colurms: 50% 50% */
+    grid-template-rows: 100%;
+    grid-template-columns: 55% 45%;
+    height: 100%;
+}
+.movie-popup img{
+    /* flex: 1 1 50%;
+    height: 100%; */
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    /* background-color: #7378c5; */
+}
+.movie-popup .movie-info{
+    /* flex: 1 1 50%;
+    height: 100%; */
+    /* background-color: #292d65; */
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    color: black;
+    text-align: left;
+    overflow: auto;
+    background-color: #22254b81;
+}
+.movie-popup .movie-info p{
+    width: 100%;
+    margin: 5px 0px
+}
+.movie-name{
+    font-weight: 800;
+}
+
+.movie-rating{
+    font-weight: 800;
+}
+.movie-duration,
+.movie-genere
+{
+    display: inline-block;
+}
+#content{
+    display:flex;
+    
+}
+#genre{
+    padding-left: 20px;
+}
+#genre h3{
+    cursor: pointer;
+}
+.movie-card-image{
+    pointer-events: none;
+}
+/* .movie-info{
+    pointer-events: none;
+} */
+.movie-card-overview{
+    pointer-events: none;
+}
+
+.movie h3{
+    pointer-events: none;
+}
+
+.book-tickets-button{
+    cursor: pointer;
+    background-color: aqua;
+    padding: 5px;
+}
