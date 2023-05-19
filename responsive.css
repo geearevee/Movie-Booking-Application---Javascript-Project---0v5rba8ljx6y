@@ -1,0 +1,70 @@
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries */
+@media screen and (max-width : 785px) {
+    /* we will decrease the size of logo */
+    header{
+        flex-direction: column;
+    }
+    /* we will move the search bar below the logo */
+    /* we will make the hamburger menu visible */
+    /* we reduce the size of the aside to 0px */
+}
+@media screen and (max-width : 412px) {
+    
+    .logo{
+        width: 400px;
+        height: auto;
+    }
+    #search{
+        background-color: white;
+        margin: 20px 0px
+    }
+    .movie{
+        width: 200px;
+    }
+    .movieDetails{
+        width: 350px;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    #right-section{
+        max-width: 80%;
+    }
+}
+
+/* 
+
+.movieDetails{
+    height: 520px;
+    width: 608px;
+    background-color: white;
+    position: relative;
+}
+
+*/
+
+/* 
+
+.movie{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0,1);
+    background-color: var(--secondry-color);
+    position:relative;
+    overflow: hidden;
+}
+
+*/
+
+
+/* 
+header{
+    padding: 1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: var(--secondry-color);
+}
+*/

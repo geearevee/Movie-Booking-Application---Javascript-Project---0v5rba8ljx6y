@@ -6,51 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <button><a href="./index.html">Back</a></button>
+    <button><a href="./index.html" style="text-decoration: none" >Back</a></button>
     <h1 id="checkout">CHECKOUT PAGE</h1>
     <div id="main-content">
-    <div id="left-section">
-      <h1>Summary</h1>
-      <p id="movie-name">Movie name</p>
-      <span >Classic ticket </span>
-      <span class="span-tag">price </span><span id="movie-price"></span><br>
-      <label>Number of tickets</label>
-      <input type="number" id ="ticketnumber"><br>
-      <span>Convenience Fee (1.75%)</span>
-      <span class="span-tag1">price</span>
-      <hr>
-      <span>Sub total</span>
-      <span class="span-tag">totalprice <span id="multiplied-price"></span></span>
+      <div id="left-section">
+        <h1>Summary</h1>
+        <p id="movie-name">Movie name</p>
+        <span >Classic ticket </span>
+        <span class="span-tag">price </span><span id="movie-price"></span><br>
+        <label>Number of tickets</label>
+        <input type="number" id ="ticketnumber"><br>
+        <span>Convenience Fee (1.75%)</span>
+        <span class="span-tag1">price</span>
+        <hr>
+        <span>Sub total</span>
+        <span class="span-tag">totalprice <span id="multiplied-price"></span></span>
 
-    </div>
-    <div id="right-section">
-      <h1>Payment</h1>
-      <label>First Name</label>
-      <input type="text">
-      <label>Last Name</label>
-      <input type="text">
-      <label>Email</label>
-      <input type="email" placeholder="your email id">
-      <hr>
-        <input type="radio" id="cc" name="card">
-        <label for="cc">Credit card</label>
-        <input type="radio" id="dc" name="card">
-        <label for="dc">Debit Card</label>
-        <input type="radio" id="upi" name="card">
-        <label for="upi">Upi</label><br>
-      <p>Name on card</p>
-      <input type="text"><br>
-      <p>Full name as displayed on card</p>
-      <p>Credit card number</p>
-      <input type="number">
-      <p>Expiration</p><br>
-      <input type="number">
-      <p>CVV</p><br>
-      <input type="number"><br>
-      <button class="complete-payment">Proceed to pay</button>
-    </div>
+      </div>
+      <div id="right-section">
+        <h1>Payment</h1>
+        <label>First Name</label>
+        <input type="text">
+        <label>Last Name</label>
+        <input type="text">
+        <label>Email</label>
+        <input type="email" placeholder="your email id">
+        <hr>
+          <input type="radio" id="cc" name="card">
+          <label for="cc">Credit card</label>
+          <input type="radio" id="dc" name="card">
+          <label for="dc">Debit Card</label>
+          <input type="radio" id="upi" name="card">
+          <label for="upi">Upi</label><br>
+        <p>Name on card</p>
+        <input type="text"><br>
+        <p>Full name as displayed on card</p>
+        <p>Credit card number</p>
+        <input type="number">
+        <p>Expiration</p><br>
+        <input type="number">
+        <p>CVV</p><br>
+        <input type="number"><br>
+        <button class="complete-payment" onclick="alert('tickets booked')">Proceed to pay</button>
+      </div>
     </div>
         
         
